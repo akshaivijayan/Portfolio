@@ -21,7 +21,7 @@ $(function () {
     const options = {
         containers: ['#swupMain', '#swupPerson', '#swupBg', '#swupSkills', '#swupMenu'],
         animateHistoryBrowsing: true,
-        linkSelector: 'a:not([data-no-swup])',
+        linkSelector: 'a:not([data-no-swup]):not(.port a)',
         plugins: [new SwupBodyClassPlugin()]
     };
     const swup = new Swup(options);
